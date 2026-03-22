@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;                
+    background-color: rgb(180,180,180);
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+button {
+    font-weight: bold;
+    width: 70px;
+    height: 20px;
+}
+
+/* pseudo */
+a:link {
+    color:red;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color:blue;
+}
