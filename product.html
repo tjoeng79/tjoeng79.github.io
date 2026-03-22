@@ -2,62 +2,104 @@
 <html>
     <head>
         <title>Product Page</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;                
+                background-color: rgb(180,180,180);
+            }
+
+            table {
+                width: 80%;
+                margin: auto;
+            }
+
+            a:link {
+                color:red;
+            }
+
+            a:visited {
+                color: brown;
+            }
+
+            a:hover {
+                color:blue;
+            }
+
+            img {                
+                width: 100px;
+                height: 100px;
+                border: 1px dashed;
+            }
+
+        </style>
     </head>
     <body>
-        <table border="0" cellspacing="0" cellpadding="10" width="80%" align="center">
-            <tr>
-                <td>
-                    <a href="index.html">Home</a>
-                </td>
-                <td>
-                    <a href="product.html">Product</a>
-                </td>
-                <td>
-                    <a href="location.html">Location</a>
-                </td>
-                <td>
-                    <a href="contact.html">Contact</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <h2>Our Products</h2>
-                    <hr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="img/product01.png" alt="HTML" title="HTML" width="100" height="100" style="border: 1px solid;">
-                            </td>
-                            <td>
-                                <p><b>HTML</b> is the <ins>standard markup language</ins> for Web pages.</p>
-                                <p>With HTML you can create your own Website.</p>
-                                <p>HTML is easy to learn - You will enjoy it!</p>
-                                <p><a href="https://www.w3schools.com/html/default.asp">Learn More...</a></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/product02.png" alt="CSS" title="CSS" width="100" height="100" style="border: 1px solid;">
-                            </td>
-                            <td>
-                                <p><b>CSS</b> is the language we use to style an HTML document.</p>
-                                <p>CSS describes <ins>how HTML elements should be displayed</ins>.</p>
-                                <p><a href="https://www.w3schools.com/css/default.asp">Learn More...</a></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/product03.png" alt="JavaScript" title="JavaScript" width="100" height="100" style="border: 1px solid;">
-                            </td>
-                            <td>
-                                <p><b>JavaScript</b> is the <ins>Programming Language</ins> of the Web.</p>
-                                <p>JavaScript is easy to learn.</p>
-                                <p><a href="https://www.w3schools.com/js/default.asp">Learn More...</a></p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+        <table cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>
+                        <a href="index.html">Home</a>
+                    </th>
+                    <th>
+                        <a href="product.html">Product</a>
+                    </th>
+                    <th>
+                        <a href="location.html">Location</a>
+                    </th>
+                    <th>
+                        <a href="contact.html">Contact</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">
+                        <h2>Our Products</h2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <table cellspacing="0" cellpadding="10">
+                            <tr>
+                                <td>
+                                    <img src="img/html.png" alt="HTML" title="HTML">
+                                </td>
+                                <td>
+                                    <p><b>HTML</b> is the <ins>standard markup language</ins> for Web pages.</p>
+                                    <p>With HTML you can create your own Website.</p>
+                                    <p>HTML is easy to learn - You will enjoy it!</p>
+                                    <p><a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn More...</a></p>
+                                </td>
+                            </tr>                            
+                            <tr>
+                                <td>
+                                    <img src="img/css.png" alt="CSS" title="CSS">                        
+                                </td>
+                                <td>
+                                    <p><b>CSS</b> is the language we use to style an HTML document.</p>
+                                    <p>CSS describes <ins>how HTML elements should be displayed</ins>.</p>
+                                    <p><a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn More...</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/js.png" alt="JS" title="JS">
+                                </td>
+                                <td>
+                                    <p><b>JavaScript</b> is the <ins>Programming Language</ins> of the Web.</p>
+                                    <p>JavaScript is easy to learn.</p>
+                                    <p><a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn More...</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>

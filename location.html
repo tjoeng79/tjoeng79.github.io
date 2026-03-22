@@ -2,61 +2,83 @@
 <html>
     <head>
         <title>Location Page</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;                
+                background-color: rgb(180,180,180);
+            }
+
+            table {
+                width: 80%;
+                margin: auto;
+            }
+
+            a:link {
+                color:red;
+            }
+
+            a:visited {
+                color: brown;
+            }
+
+            a:hover {
+                color:blue;
+            }
+
+            ul {
+                list-style: square;
+            }
+
+        </style>
     </head>
     <body>
-        <table border="0" cellspacing="0" cellpadding="10" width="80%" align="center">
-            <tr>
-                <td>
-                    <a href="index.html">Home</a>
-                </td>
-                <td>
-                    <a href="product.html">Product</a>                    
-                </td>
-                <td>
-                    <a href="location.html">Location</a>
-                </td>
-                <td>
-                    <a href="contact.html">Contact</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <h2>Where to Find</h2>
-                    <hr>
-                    <ul>
-                        <li>
-                            <table>
-                                <tr>
-                                    <td><b>Jakarta</b></td>
-                                </tr>
-                                <tr>
-                                    <td><i>Jl Letjen Suprapto</i></td>
-                                </tr>
-                            </table>
-                        </li>
-                        <li>
-                            <table>
-                                <tr>
-                                    <td><b>Surabaya</b></td>
-                                </tr>
-                                <tr>
-                                    <td><i>Jl Raya Darmo Permai III</i></td>
-                                </tr>
-                            </table>
-                        </li>
-                        <li>
-                            <Table>
-                                <tr>
-                                    <td><b>Bali</b></td>
-                                </tr>
-                                <tr>
-                                    <td><i>Jl Pandawa</i></td>
-                                </tr>
-                            </Table>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
+        <table cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>
+                        <a href="index.html">Home</a>
+                    </th>
+                    <th>
+                        <a href="product.html">Product</a>                    
+                    </th>
+                    <th>
+                        <a href="location.html">Location</a>
+                    </th>
+                    <th>
+                        <a href="contact.html">Contact</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">
+                        <h2>Where to Find</h2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ul>
+                            <li>
+                                <b>Jakarta</b>
+                                <p><i>Jl Letjen Suprapto</i></p>
+                            </li>
+                            <li>
+                                <b>Surabaya</b>
+                                <p><i>Jl Raya Darmo Permai III</i></p>
+                            </li>
+                            <li>
+                                <b>Bali</b>
+                                <p><i>Jl Pandawa</i></p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>

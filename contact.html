@@ -2,46 +2,87 @@
 <html>
     <head>
         <title>Contact Page</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;                
+                background-color: rgb(180,180,180);
+            }
+
+            table {
+                width: 80%;
+                margin: auto;
+            }
+
+            a:link {
+                color:red;
+            }
+
+            a:visited {
+                color: brown;
+            }
+
+            a:hover {
+                color:blue;
+            }
+
+            button {
+                font-weight: bold;
+                width: 70px;
+                height: 20px;
+            }
+
+        </style>
     </head>
     <body>
-        <form action="">
-            <table border="0" cellspacing="0" cellpadding="10" width="80%" align="center">
+        <table cellspacing="0" cellpadding="10">
+            <thead>
                 <tr>
-                    <td>
+                    <th>
                         <a href="index.html">Home</a>
-                    </td>
-                    <td>
+                    </th>
+                    <th>
                         <a href="product.html">Product</a>
-                    </td>
-                    <td>
+                    </th>
+                    <th>
                         <a href="location.html">Location</a>
-                    </td>
-                    <td>
+                    </th>
+                    <th>
                         <a href="contact.html">Contact</a>
-                    </td>
+                    </th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td colspan="4">
                         <h2>Contact Us</h2>
                         <hr>
-                        <table border="0" cellspacing="0" cellpadding="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <form action="">
+                        <table cellspacing="0" cellpadding="10">
                             <tr>
-                                <td><label for="Name"><b>Name</b></label></td>
+                                <td><label for="Name">Name</label></td>
                                 <td><input type="text" id="Name"></td>
                             </tr>
                             <tr>
-                                <td><label for="Email"><b>Email</b></label></td>
+                                <td><label for="Email">Email</label></td>
                                 <td><input type="text" id="Email"></td>
                             </tr>
                             <tr>
-                                <td><label for=""><b>Gender</b></label></td>
+                                <td><label for="">Gender</label></td>
                                 <td>
                                     <input type="radio" id="Male" name="Gender"><label for="Male">Male</label>
                                     <input type="radio" id="Female" name="Gender"><label for="Female">Female</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for=""><b>Location</b></label></td>
+                                <td><label for="">Location</label></td>
                                 <td>
                                     <select name="" id="Location">
                                         <option value="Jakarta">Jakarta</option>
@@ -51,7 +92,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for=""><b>Interest</b></label></td>
+                                <td><label for="">Interest</label></td>
                                 <td>
                                     <input type="checkbox" name="Interest" id="Desktop"><label for="Desktop">Desktop</label>
                                     <br>
@@ -61,20 +102,20 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for="Comment"><b>Comment</b></label></td>
+                                <td><label for="Comment">Comment</label></td>
                                 <td><textarea name="Comment" id="Comment"></textarea></td>
                             </tr>
                             <tr>
                                 <td colspan="2" align="center">
-                                    <button type="submit">Submit</button>
-                                    <button type="reset">Reset</button>
+                                    <button type="submit">SUBMIT</button>
+                                    <button type="reset">RESET</button>
                                 </td>
                             </tr>
                         </table>
+                        </form>
                     </td>
                 </tr>
-            </table>
-
-        </form>
+            </tbody>
+        </table>
     </body>
 </html>
