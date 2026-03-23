@@ -7,21 +7,41 @@ body {
     background-color: bisque;
 }
 
-table {
-    width: 80%;
-    margin: auto;
-}
-
-th {
-    text-align: left;
-}
-
 a {
     text-decoration: none;
 }
 
-p {
+a:link {
+    color:red;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color:blue;
+}
+
+.navigation {
+    height: 30px;
+    text-align: center;
+}
+
+.navigation li {
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content p {
     text-align: justify;
+}
+
+.footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
 }
 
 #Desktop, .desktopExamples {
@@ -34,17 +54,4 @@ p {
 
 #Mobile, .mobileExamples {
     color: #0a29b3;
-}
-
-/* pseudo */
-a:link {
-    color:red;
-}
-
-a:visited {
-    color: brown;
-}
-
-a:hover {
-    color:blue;
 }

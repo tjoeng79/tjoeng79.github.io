@@ -7,26 +7,10 @@ body {
     background-color: bisque;
 }
 
-table {
-    width: 80%;
-    margin: auto;
-}
-
-th {
-    text-align: left;
-}
-
 a {
     text-decoration: none;
 }
 
-button {
-    width: 80px;
-    height: 30px;
-    font-weight: bold;
-}
-
-/* pseudo */
 a:link {
     color:red;
 }
@@ -37,4 +21,31 @@ a:visited {
 
 a:hover {
     color:blue;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.navigation {
+    height: 30px;
+    text-align: center;
+}
+
+.navigation li {
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
 }

@@ -6,74 +6,74 @@
         <link rel="stylesheet" href="css/contact.css">
     </head>
     <body>
-        <table cellspacing="0" cellpadding="10" align="center">
-            <tr>
-                <th><a href="index.html">Home</a></th>
-                <th><a href="article.html">Article</a></th>
-                <th><a href="location.html">Location</a></th>
-                <th><a href="contact.html">Contact</a></th>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <div>
-                        <h2>Contact Us</h2>
-                        <hr>
-                    </div>
-                    <div>
-                        <table class="tableContact" cellspacing="0" cellpadding="10">
-                            <form action="">
-                            <tr>
-                                <td><label for="Name">Name</label></td>
-                                <td><input type="text" id="Name"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="Email">Email</label></td>
-                                <td><input type="text" id="Email"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Gender</label></td>
-                                <td>
-                                    <input type="radio" id="Male" name="Gender"><label for="Male">Male</label>
-                                    <input type="radio" id="Female" name="Gender"><label for="Female">Female</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Location</label></td>
-                                <td>
-                                    <select name="" id="Location">
-                                        <option value="Jakarta">Jakarta</option>
-                                        <option value="Surabaya">Surabaya</option>
-                                        <option value="Medan">Medan</option>
-                                        <option value="Bali">Bali</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Interest</label></td>
-                                <td>
-                                    <input type="checkbox" name="Interest" id="Desktop"><label for="Desktop">Desktop</label>
-                                    <br>
-                                    <input type="checkbox" name="Interest" id="Web"><label for="Web">Web</label>
-                                    <br>
-                                    <input type="checkbox" name="Interest" id="Mobile"><label for="Mobile">Mobile</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="Comment">Comment</label></td>
-                                <td><textarea name="Comment" id="Comment"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <button type="submit">SUBMIT</button>
-                                    <button type="reset">RESET</button>
-                                </td>
-                            </tr>
-                            </form>
-                        </table>                        
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>        
+        <div class="header">
+            <h2>Contact Us</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <form action="">
+                <table cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td><label for="Name">Name</label></td>
+                        <td><input type="text" id="Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td><input type="text" id="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender</label></td>
+                        <td>
+                            <input type="radio" id="Male" name="Gender"><label for="Male">Male</label>
+                            <input type="radio" id="Female" name="Gender"><label for="Female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Location</label></td>
+                        <td>
+                            <select name="" id="Location">
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Medan">Medan</option>
+                                <option value="Bali">Bali</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Interest</label></td>
+                        <td>
+                            <input type="checkbox" name="Interest" id="Desktop"><label for="Desktop">Desktop</label>
+                            <br>
+                            <input type="checkbox" name="Interest" id="Web"><label for="Web">Web</label>
+                            <br>
+                            <input type="checkbox" name="Interest" id="Mobile"><label for="Mobile">Mobile</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Comment">Comment</label></td>
+                        <td><textarea name="Comment" id="Comment"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">SUBMIT</button>
+                            <button type="reset">RESET</button>
+                        </td>
+                    </tr>
+                </table>                        
+            </form>
+        </div>
+        <div class="footer">
+            <hr>
+            <p>Copyright@2026</p>
+        </div>
     </body>
 </html>

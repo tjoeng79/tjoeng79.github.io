@@ -7,42 +7,10 @@ body {
     background-color: bisque;
 }
 
-table {
-    width: 80%;
-    margin: auto;
-}
-
-th {
-    text-align: left;
-}
-
 a {
     text-decoration: none;
 }
 
-.tableLocation {
-    border: 1px solid #4d4b4b;
-    width: 100%;
-}
-
-.tableLocation th:first-child {
-    background-color: thistle;
-}
-
-.tableLocation th {
-    background-color: thistle;
-}
-
-
-.tableLocation tr:nth-child(2n) {
-    background-color: floralwhite;
-}
-
-.tableLocation tr:nth-child(2n+1) {
-    background-color: gainsboro;
-}
-
-/* pseudo */
 a:link {
     color:red;
 }
@@ -53,4 +21,43 @@ a:visited {
 
 a:hover {
     color:blue;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #4d4b4b;
+}
+
+th {
+    text-align: left;
+    background-color: thistle;
+}
+
+tr:nth-child(2n) {
+    background-color: floralwhite;
+}
+
+tr:nth-child(2n+1) {
+    background-color: gainsboro;
+}
+
+td {
+    vertical-align: top;
+}
+
+.navigation {
+    height: 30px;
+    text-align: center;
+}
+
+.navigation li {
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
 }
