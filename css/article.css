@@ -20,26 +20,18 @@ a {
     text-decoration: none;
 }
 
-.tableLocation {
-    border: 1px solid #4d4b4b;
+img {
+    border: 1px solid #424242;
+    width: 100px;
+    height: 100px;
+}
+
+.tableArticle {
     width: 100%;
 }
 
-.tableLocation th:first-child {
-    background-color: thistle;
-}
-
-.tableLocation th {
-    background-color: thistle;
-}
-
-
-.tableLocation tr:nth-child(2n) {
-    background-color: floralwhite;
-}
-
-.tableLocation tr:nth-child(2n+1) {
-    background-color: gainsboro;
+.tableArticle tr td:first-child {
+    text-align: right;
 }
 
 /* pseudo */
