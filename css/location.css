@@ -23,37 +23,47 @@ a:hover {
     color:blue;
 }
 
-table {
-    width: 80%;
-    border: 1px solid #4d4b4b;
-}
-
-th {
-    text-align: left;
-    background-color: thistle;
-}
-
-tr:nth-child(2n) {
-    background-color: floralwhite;
-}
-
-tr:nth-child(2n+1) {
-    background-color: gainsboro;
-}
-
-td {
-    vertical-align: top;
-}
-
-.navigation {
-    height: 30px;
+.nav {
     text-align: center;
 }
 
-.navigation li {
-    width: 100px;
+.nav li {
+    width: 20%;
     font-weight: bold;
     display: inline-block;
+}
+
+.header, .main, .footer {
+    width: 80%;
+    margin: auto;
+}
+
+.data table {
+    width: 100%;
+    border: 1px solid #4d4b4b;
+}
+
+.data th {
+    text-align: left;
+    background-color: thistle;
+    border-bottom: 1px solid #4d4b4b;
+}
+
+.data tr:nth-child(2n) {
+    background-color: floralwhite;
+}
+
+.data tr:nth-child(2n+1) {
+    background-color: gainsboro;
+}
+
+.data td {
+    vertical-align: top;
+    border-bottom: 1px solid #4d4b4b;
+}
+
+.data td a {
+    font-style: italic;
 }
 
 .footer {

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/contact.css">
     </head>
     <body>
-        <div class="navigation">
+        <div class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="article.html">Article</li>
@@ -19,57 +19,59 @@
             <hr>
         </div>
         <div class="main">
-            <form action="">
-                <table cellspacing="0" cellpadding="10">
-                    <tr>
-                        <td><label for="Name">Name</label></td>
-                        <td><input type="text" id="Name"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Email">Email</label></td>
-                        <td><input type="text" id="Email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Gender</label></td>
-                        <td>
-                            <input type="radio" id="Male" name="Gender"><label for="Male">Male</label>
-                            <input type="radio" id="Female" name="Gender"><label for="Female">Female</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Location</label></td>
-                        <td>
-                            <select name="" id="Location">
-                                <option value="Jakarta">Jakarta</option>
-                                <option value="Surabaya">Surabaya</option>
-                                <option value="Medan">Medan</option>
-                                <option value="Bali">Bali</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Interest</label></td>
-                        <td>
-                            <input type="checkbox" name="Interest" id="Desktop"><label for="Desktop">Desktop</label>
-                            <br>
-                            <input type="checkbox" name="Interest" id="Web"><label for="Web">Web</label>
-                            <br>
-                            <input type="checkbox" name="Interest" id="Mobile"><label for="Mobile">Mobile</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="Comment">Comment</label></td>
-                        <td><textarea name="Comment" id="Comment"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="submit">SUBMIT</button>
-                            <button type="reset">RESET</button>
-                        </td>
-                    </tr>
-                </table>                        
-            </form>
+            <div class="data">
+                <form action="get">
+                    <table cellspacing="0" cellpadding="10">
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Entity</label></td>
+                            <td>
+                                <input type="radio" id="personal" name="entity" value="personal"><label for="personal">Personal</label>
+                                <input type="radio" id="business" name="entity" value="business"><label for="business">Business</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="location">Location</label></td>
+                            <td>
+                                <select name="location" id="location">
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Surabaya">Surabaya</option>
+                                    <option value="Medan">Medan</option>
+                                    <option value="Bali">Bali</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Interest</label></td>
+                            <td>
+                                <input type="checkbox" name="interest" id="desktop" value="desktop"><label for="desktop">Desktop</label>
+                                <br>
+                                <input type="checkbox" name="interest" id="web" value="web"><label for="web">Web</label>
+                                <br>
+                                <input type="checkbox" name="interest" id="mobile" value="mobile"><label for="mobile">Mobile</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="comment">Comment</label></td>
+                            <td><textarea name="comment" id="comment" rows="5" cols="40"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="submit">SUBMIT</button>
+                                <button type="reset">RESET</button>
+                            </td>
+                        </tr>
+                    </table>                        
+                </form>
+            </div>
         </div>
         <div class="footer">
             <hr>

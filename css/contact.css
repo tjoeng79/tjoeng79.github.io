@@ -23,25 +23,24 @@ a:hover {
     color:blue;
 }
 
-button {
-    width: 80px;
-    height: 30px;
-    font-weight: bold;
-}
-
-.navigation {
-    height: 30px;
+.nav {
     text-align: center;
 }
 
-.navigation li {
-    width: 100px;
+.nav li {
+    width: 20%;
     font-weight: bold;
     display: inline-block;
 }
 
-.content p {
-    text-align: justify;
+.header, .main, .footer {
+    width: 80%;
+    margin: auto;
+}
+
+.data button {
+    width: 25%;
+    font-weight: bold;
 }
 
 .footer {
