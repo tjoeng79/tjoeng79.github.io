@@ -63,11 +63,14 @@ body {
 .nav {
     background-color:rgb(60, 45, 45);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav li {
-    margin-top: 10px;
     margin-right: 5px;
     display: inline-block;
 }
@@ -85,6 +88,7 @@ body {
 
 .header {
     border-top: 5px solid salmon;
+    margin-top: 36px;
 }
 
 .main {
