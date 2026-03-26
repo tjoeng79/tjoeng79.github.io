@@ -44,6 +44,17 @@ table {
 }
 
 
+/** Animation **/
+@keyframes animMarqueRight {
+    0% {
+        width: 300%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
 /** Style **/
 html {
     scroll-behavior: smooth;
@@ -94,11 +105,11 @@ body {
     background-position: 0 -10px;
     border-top: 5px solid salmon;
     margin-top: 36px;
-}
+} 
 
 .header:hover {
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
+    -webkit-filter: sepia(80%);
+    filter: sepia(80%);
 }
 
 .main {
@@ -138,6 +149,8 @@ body {
     color: #f0f0f0;
     font-size: 12px;
     font-style: italic;
+    animation-name: animMarqueRight;
+    animation-duration: 3s;
 }
 
 .desktop {

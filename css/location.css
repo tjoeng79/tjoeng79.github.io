@@ -119,6 +119,10 @@ body {
     background-color: gainsboro;
 }
 
+.main tr:hover {
+    background-color: rgba(60, 45, 45, .8);
+}
+
 .main td {
     padding: 10px;
     vertical-align: top;
@@ -131,8 +135,8 @@ body {
 
 .footer {    
     background-color: rgba(60, 45, 45, .8);
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
 }
 
 .copyright {
