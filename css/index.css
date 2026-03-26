@@ -114,6 +114,7 @@ body {
 }
 
 .main p {
+    font-family: 'Indie Flower', cursive;
     text-align: justify;
     line-height: normal;
 }

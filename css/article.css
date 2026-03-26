@@ -44,6 +44,13 @@ table {
 }
 
 
+/** Font-face **/
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../font/FiraSans-Regular.otf') format('truetype');
+}
+
+
 /** Style **/
 html {
     scroll-behavior: smooth;
@@ -102,6 +109,7 @@ body {
 }
 
 .article p {
+    font-family: 'Fira Sans', arial;
     text-align: justify;
     line-height: normal;
 }
@@ -113,6 +121,11 @@ body {
     margin: 0 20px 20px 0;
     border-radius: 15%;
     box-shadow: 5px 5px 5px rgba(60, 45, 45, .8);
+}
+
+.article img:hover {
+    -webkit-filter: contrast(250%);
+    filter: contrast(250%);
 }
 
 .articleSubject {
