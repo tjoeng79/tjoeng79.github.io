@@ -99,11 +99,26 @@ body {
 
 .main td {
     padding: 10px;
+}   
+
+.main input:required {
+    background-color: salmon;
+}
+
+.main input:focus, .main textarea:focus {
+    color: #f0f0f0;
+    background-color: rgba(60, 45, 45, .8);
 }
 
 .main button {
-    width: 25%;
+    width: 30%;
     font-weight: bold;
+    border-radius: 10px;
+}
+
+.main button:hover {
+    color: #f0f0f0;
+    background-color: rgba(60, 45, 45, .8);
 }
 
 .footer {    
