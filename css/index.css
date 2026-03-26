@@ -96,6 +96,11 @@ body {
     margin-top: 36px;
 }
 
+.header:hover {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
 .main {
     border-top: 5px solid rgb(100, 150, 180);
     padding: 0 10px;
