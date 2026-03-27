@@ -12,27 +12,31 @@
 
 
 /** Style **/
-.header {
+header {
     border-top: 5px solid salmon;
     margin-top: 36px;
 }
 
-.main {
+main {
     padding: 0 10px;
     overflow: hidden;
 }
 
-.main li {
+main li {
     margin: 10px 0 10px 40px;
 }
 
-.article p {
+article {
+    padding: 10px;
+}
+
+article p {
     font-family: 'Fira Sans', arial;
     text-align: justify;
     line-height: normal;
 }
 
-.article img {
+article img {
     width: 100px;
     height: 100px;
     float: left;
@@ -42,7 +46,7 @@
     transition: 1s;
 }
 
-.article img:hover {
+article img:hover {
     transform:rotate(360deg);
 }
 

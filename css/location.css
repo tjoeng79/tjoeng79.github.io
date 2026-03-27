@@ -5,22 +5,22 @@
 
 
 /** Style **/
-.header {
+header {
     border-top: 5px solid salmon;
     margin-top: 36px;
 }
 
-.main {
+main {
     padding: 10px;
     overflow: hidden;
 }
 
-.main table {
+main table {
     width: 100%;
     border: 1px solid rgb(60, 45, 45);
 }
 
-.main th {
+main th {
     padding: 10px;
     text-align: left;
     color: #f0f0f0;
@@ -29,24 +29,24 @@
     border-bottom: 1px solid rgb(60, 45, 45);
 }
 
-.main tr:nth-child(2n) {
+main tr:nth-child(2n) {
     background-color: floralwhite;
 }
 
-.main tr:nth-child(2n+1) {
+main tr:nth-child(2n+1) {
     background-color: gainsboro;
 }
 
-.main tr:hover {
+main tr:hover {
     background-color: rgba(60, 45, 45, .8);
 }
 
-.main td {
+main td {
     padding: 10px;
     vertical-align: top;
     border-bottom: 1px solid rgb(60, 45, 45);
 }
 
-.main td a {
+main td a {
     font-style: italic;
 }
