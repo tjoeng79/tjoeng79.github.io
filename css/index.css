@@ -5,13 +5,13 @@
 
 
 /** Animation **/
-@keyframes animMarque {
+@keyframes animBlurIn {
     0% {
-        width: 0;
-        background-image: none;
+        filter: blur(10px);
     }
+
     100% {
-        width: 100%;
+        filter: blur(0);
     }
 }
 
@@ -19,17 +19,19 @@
 /** Style **/
 .header {
     height: 200px;
-    background-image: url('../img/hero.jpg');
-    background-size: 100%;
-    background-position: 0 -10px;
     border-top: 5px solid salmon;
     margin-top: 36px;
-    animation-name: animMarque;
+    animation-name: animBlurIn;
     animation-timing-function:ease-in;
     animation-duration: 2s;
 } 
 
-.header:hover {
+.header img {
+    width: 100%;
+    height: 100%;    
+}
+
+.header img:hover {
     -webkit-filter: sepia(80%);
     filter: sepia(80%);
 }
