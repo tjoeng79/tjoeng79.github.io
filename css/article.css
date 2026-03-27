@@ -26,28 +26,36 @@ main li {
     margin: 10px 0 10px 40px;
 }
 
-article {
-    padding: 10px;
+content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-article p {
-    font-family: 'Fira Sans', arial;
-    text-align: justify;
-    line-height: normal;
+article {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+    overflow: hidden;
 }
 
 article img {
     width: 100px;
     height: 100px;
-    float: left;
     margin: 0 20px 20px 0;
     border-radius: 15%;
-    box-shadow: 5px 5px 5px rgba(60, 45, 45, .8);
     transition: 1s;
 }
 
 article img:hover {
-    transform:rotate(360deg);
+    transform: translate(50px);
+    filter: drop-shadow(5px 5px 5px rgba(60, 45, 45, .8));
+}
+
+article p {
+    font-family: 'Fira Sans', arial;
+    line-height: normal;
 }
 
 .articleSubject {
