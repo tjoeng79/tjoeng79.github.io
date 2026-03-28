@@ -15,26 +15,32 @@ main {
     overflow: hidden;
 }
 
-main td {
-    padding: 10px;
-}   
+content {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    gap: 5px;
+}
 
-main input:required {
+content div {        
+    padding: 5px 0;
+}
+
+content input:required {
     background-color: salmon;
 }
 
-main input:focus, main textarea:focus {
+content input:focus, content textarea:focus {
     color: #f0f0f0;
     background-color: rgba(60, 45, 45, .8);
 }
 
-main button {
-    width: 30%;
+content button {
+    width: 20%;
     font-weight: bold;
     border-radius: 10px;
 }
 
-main button:hover {
+content button:hover {
     color: #f0f0f0;
     background-color: rgba(60, 45, 45, .8);
 }
