@@ -1,63 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Home Page</title>        
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" >
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="article.html">Article</a></li>
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <header>
-                <img src="img/hero.jpg" alt="hero.jpg">
-            </header>
-            <main>
-                <content>
-                    <article>
-                        <h3>Types of Application</h3>
-                        <ol type="I">
-                            <li><a href="#desktop">Desktop</a></li>
-                            <li><a href="#web">Web</a></li>
-                            <li><a href="#mobile">Mobile</a></li>
-                        </ol>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" >
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <img src="img/hero.jpg" alt="hero.jpg">
+        </header>
+        <main>
+            <content>
+                <article>
+                    <h3>Types of Application</h3>
+                    <ol type="I">
+                        <li><a href="#desktop">Desktop</a></li>
+                        <li><a href="#web">Web</a></li>
+                        <li><a href="#mobile">Mobile</a></li>
+                    </ol>
+                </article>
+                <article class="cf">
+                    <h3 id="desktop" class="desktop">Desktop</h3>                    
+                    <img src="img/desktop.png" alt="desktop.png" loading="lazy">
+                    <p>A desktop application is a standalone software program installed directly on a computer (Windows, macOS, Linux) that operates independently of a web browser, 
+                        often offering high performance, offline functionality, and direct hardware access. 
+                        These applications are used for tasks requiring significant resources, such as video editing, specialized software, or productivity tools</p>
+                    <p>Common examples: <span class="desktop">Microsoft Office, Adobe Photoshop</span>.</p>
+                </article>
+                <article class="cf">
+                    <h3 id="web" class="web">Web</h3>
+                    <img src="img/web.png" alt="web.png" loading="lazy">
+                    <p>A web application is interactive software that runs in a web browser, 
+                        allowing users to perform tasks like online banking, shopping, or editing documents without installing software. 
+                        Unlike static websites, web apps use server-side technologies to provide dynamic, personalized content, and they are accessed over the internet.</p>
+                    <p>Common examples: <span class="web">Google Docs, Microsoft 365</span>.</p>
+                </article>
+                <article class="cf">
+                    <h3 id="mobile" class="mobile">Mobile</h3>
+                    <img src="img/mobile.png" alt="mobile.png" loading="lazy">
+                    <p>A mobile application (app) is a software program designed specifically to run on mobile devices like smartphones and tablets. 
+                        Unlike desktop software, these apps offer specialized, streamlined services—such as banking, social media, or gaming—and 
+                        are generally downloaded from digital distribution platforms like the Apple App Store or Google Play Store.</p>
+                    <p>Common examples: <span class="mobile">WhatsApp, Spotify</span>.</p>
                     </article>
-                    <article class="cf">
-                        <h3 id="desktop" class="desktop">Desktop</h3>                    
-                        <img src="img/desktop.png" alt="desktop.png" loading="lazy">
-                        <p>A desktop application is a standalone software program installed directly on a computer (Windows, macOS, Linux) that operates independently of a web browser, 
-                            often offering high performance, offline functionality, and direct hardware access. 
-                            These applications are used for tasks requiring significant resources, such as video editing, specialized software, or productivity tools</p>
-                        <p>Common examples: <span class="desktop">Microsoft Office, Adobe Photoshop</span>.</p>
-                    </article>
-                    <article class="cf">
-                        <h3 id="web" class="web">Web</h3>
-                        <img src="img/web.png" alt="web.png" loading="lazy">
-                        <p>A web application is interactive software that runs in a web browser, 
-                            allowing users to perform tasks like online banking, shopping, or editing documents without installing software. 
-                            Unlike static websites, web apps use server-side technologies to provide dynamic, personalized content, and they are accessed over the internet.</p>
-                        <p>Common examples: <span class="web">Google Docs, Microsoft 365</span>.</p>
-                    </article>
-                    <article class="cf">
-                        <h3 id="mobile" class="mobile">Mobile</h3>
-                        <img src="img/mobile.png" alt="mobile.png" loading="lazy">
-                        <p>A mobile application (app) is a software program designed specifically to run on mobile devices like smartphones and tablets. 
-                            Unlike desktop software, these apps offer specialized, streamlined services—such as banking, social media, or gaming—and 
-                            are generally downloaded from digital distribution platforms like the Apple App Store or Google Play Store.</p>
-                        <p>Common examples: <span class="mobile">WhatsApp, Spotify</span>.</p>
-                        </article>
-                </content>
-            </main>            
-            <footer>
-                <p class="copyright">Copyright@2026</p>
-            </footer>
-        </div>
-    </body>
+            </content>
+        </main>            
+        <footer>
+            <p class="copyright">Copyright@2026</p>
+        </footer>
+    </div>
+</body>
 </html>
