@@ -7,11 +7,13 @@
 /** Animation **/
 @keyframes animScreen {
     0% {
-        transform: scale(0);
+        width: 0;
+        /* transform: scale(0); */
     }
 
     100% {
-        transform: scale(1);
+        width: 100%;
+        /* transform: scale(1); */
     }
 }
 
@@ -55,8 +57,8 @@ article {
 }
 
 article img {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 2px;
