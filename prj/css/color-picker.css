@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.header {
+    margin: 40px auto;
+}
+
+.container {
+    width: 200px;
+    margin: 50px auto;
+    background-color: #000;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.color-area {
+    line-height: 50px;
+    margin: 10px 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.color-area p {
+    width: 40px;
+    border: 1px solid black;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+}
