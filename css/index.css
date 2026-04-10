@@ -94,5 +94,10 @@ article span {
 }
 
 #desktop, #web, #mobile {
-    text-shadow: 0 2px 1px black;
+    opacity: .5;
+}
+
+:target {
+    text-shadow: 5px 5px 5px rgb(126, 126, 126);
+    font-size: 50px;
 }
