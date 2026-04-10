@@ -44,3 +44,9 @@ content button:hover {
     color: #f0f0f0;
     background-color: rgba(60, 45, 45, .8);
 }
+
+.webmaster {
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+}
