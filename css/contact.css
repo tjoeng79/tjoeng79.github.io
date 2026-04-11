@@ -47,6 +47,9 @@ content button:hover {
 
 .webmaster {
     text-align: right;
-    font-style: italic;
     font-size: small;
+}
+
+.webmaster a {
+    text-decoration: none;
 }
