@@ -26,7 +26,6 @@ body {
     margin: auto;
     border: 4px solid antiquewhite;
     border-radius: 50px;
-    /* box-sizing: border-box; */
 }
 
 .comp-area {
@@ -42,7 +41,6 @@ body {
     color: skyblue;
     padding: 10px;
     margin-bottom: 20px;    
-    /* filter: drop-shadow(0 2px 5px black); */
 }
 
 .player-area {
@@ -58,7 +56,7 @@ body {
     color: tomato;
     padding: 10px;
     margin-top: 20px;
-    /* filter: drop-shadow(0 2px 5px black); */
+    cursor: pointer;
 }
 
 .player-area img {
@@ -69,7 +67,6 @@ body {
     width: 50%;
     background-color: antiquewhite;
     border-radius: 10px;
-    /* padding: 0px; */
     position: absolute;
     top: 210px;
     left: 150px;

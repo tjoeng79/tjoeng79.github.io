@@ -31,9 +31,11 @@ function rotateImages() {
     }, 100);
 }
 
-const playerName = prompt('Enter your name:');
 const playerInfo = document.getElementById('player-text');
-playerInfo.innerHTML = playerName;
+playerInfo.addEventListener('click',function(){
+    let playerName = prompt('Enter your name:');
+    playerInfo.innerHTML = playerName;
+});
 
 let compScore = 0;
 let playerScore = 0;
