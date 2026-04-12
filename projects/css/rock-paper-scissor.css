@@ -61,7 +61,7 @@ body {
     /* filter: drop-shadow(0 2px 5px black); */
 }
 
-.player-area img:hover {
+.player-area img {
     cursor: pointer;
 }
 
