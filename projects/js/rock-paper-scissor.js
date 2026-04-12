@@ -32,9 +32,12 @@ function rotateImages() {
 }
 
 const playerInfo = document.getElementById('player-text');
+let playerName = playerInfo.textContent;
+
 playerInfo.addEventListener('click',function(){
-    let playerName = prompt('Enter your name:');
-    playerInfo.innerHTML = playerName;
+    let newName = prompt('Enter your name:');
+    playerName = (newName == undefined) ? playerName : newName;
+    playerInfo.textContent = playerName;
 });
 
 let compScore = 0;
