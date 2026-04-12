@@ -24,13 +24,13 @@ body {
     width: 200px;
     float: left;
     border: 2px solid tomato;
-    opacity: 0.25;
+    cursor: pointer;
+    opacity: 0.3;
     box-sizing: border-box;
 }
 
 .thumb:hover {
-    cursor: pointer;
-    opacity: 0.75;
+    opacity: 0.6;
 }
 
 @keyframes fadeIn {
