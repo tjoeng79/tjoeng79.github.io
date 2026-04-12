@@ -14,23 +14,35 @@ body {
 }
 
 .container {
-    width: 240px;
+    width: 400px;
     margin: 50px auto;
+    background-color: rgb(60, 60, 60);
+    border: 2px solid wheat;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+        'displayArea displayArea displayArea'
+        'operatorArea numberArea numberArea';
 }
 
-.container button:hover {
+.container button {
+    border: 2px solid wheat;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .display-area {
-    background-color: skyblue;
-    height: 40px;    
-    border-radius: 10px 10px 0 0;
-    padding: 10px 20px;
+    grid-area: displayArea;
+    padding: 10px 20px;    
 }
 
 .display-area p {
-    background-color: tomato;
+    background-color: dimgray;
+    color: rgb(29, 233, 90);
     border: 2px solid antiquewhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
@@ -42,24 +54,17 @@ body {
 }
 
 .operator-area {
-    background-color: skyblue;
+    grid-area: operatorArea;
 }
 
 .operator-area button {
-    width: 50px;
-    height: 50px;
-    margin: 5px 10px;
-    font-size: 24px;
+    background-color: coral;
 }
 
 .number-area {
-    background-color: skyblue;
-    border-radius: 0 0 10px 10px;
+    grid-area: numberArea;
 }
 
 .number-area button {
-    width: 50px;
-    height: 50px;
-    margin: 5px 10px;
-    font-size: 24px;
+    background-color: lightslategray;
 }
