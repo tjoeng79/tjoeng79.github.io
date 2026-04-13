@@ -35,29 +35,30 @@ content input:focus, content textarea:focus {
 }
 
 content button {
-    width: 20%;
-    font-weight: bold;
-    border-radius: 10px;
+    width: 30%;
+    font-size: 1.2rem;
+    border-radius: 12px;
 }
 
 content button:hover {
     color: #f0f0f0;
     background-color: rgba(60, 45, 45, .8);
+    font-weight: bold;
 }
 
 .contact-admin {
     background-color: burlywood;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     font-size: 1.2rem;
     display: inline-block;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     border-radius: 50%;
     border: 2px solid tomato;
     box-shadow: 4px 4px 4px rgba(60, 45, 45, .8);
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: 10px;    
 }
 
