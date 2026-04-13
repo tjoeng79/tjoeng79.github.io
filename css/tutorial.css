@@ -34,10 +34,10 @@ content {
 
 article {
     width: 200px;
-    /* height: 250px; */
     padding: 10px;
     margin: 5px;
     overflow: hidden;
+    font-size: .8rem;
 }
 
 article img {
@@ -54,7 +54,8 @@ article img:hover {
 }
 
 article p {
-    font-family: 'Fira Sans', arial;
+    font-family: 'Fira Sans', arial;    
+    font-size: 1rem;
     margin-bottom: 10px;
     line-height: normal;
 }
