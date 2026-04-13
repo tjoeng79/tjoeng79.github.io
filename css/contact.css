@@ -45,11 +45,22 @@ content button:hover {
     background-color: rgba(60, 45, 45, .8);
 }
 
-.webmaster {
-    text-align: right;
-    font-size: small;
+.contact-admin {
+    background-color: burlywood;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 2px solid tomato;
+    box-shadow: 4px 4px 4px rgba(60, 45, 45, .8);
+    position: absolute;
+    top: -15px;
+    right: 10px;    
 }
 
-.webmaster a {
-    text-decoration: none;
+footer {
+    position: relative;
 }
