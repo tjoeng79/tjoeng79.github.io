@@ -1,53 +1,57 @@
-const digitalClock = document.getElementById("digitalClock");
+const clockInfo_p = document.getElementById("clock-info");
 
 setInterval(() => {
     let today = new Date();
-    digitalClock.textContent = today.toLocaleString();    
+    clockInfo_p.textContent = today.toLocaleString();    
 }, 500);
 
-const textElapsedTime = document.getElementById('elapsedTime');
+const timerInfo_p = document.getElementById('timer-info');
 
-let timerId = 0;
-let timerState = 0;
+let timerId = null;
+let startTime = 0;
+let elapsedTime = 0;
+let isRunning = false;
 
-function runTimer(startTime, elapsedTime) {
-    timerId = setInterval(() => {
-        let duration =  Date.now() - startTime + elapsedTime;
-        let hours = Math.floor(duration / (60 * 60 * 1000));
-        let mins = Math.floor((duration % (60 * 60 * 1000)) / (60 * 1000));
-        let secs = Math.floor(((duration % (60 * 60 * 1000)) % (60 * 1000)) / 1000);
+function updateDisplay() {
+    const currentTime = Date.now();
+    elapsedTime = currentTime - startTime;
 
-        textElapsedTime.textContent = hours.toString().padStart(2,'0') + ':' + mins.toString().padStart(2,'0') + ':' + secs.toString().padStart(2,'0');
-    }, 500);
-};
+    let hours = Math.floor(elapsedTime  / (1000 * 60 * 60));
+    let minutes = Math.floor(elapsedTime / (1000 * 60) % 60);
+    let seconds = Math.floor(elapsedTime / 1000 % 60);
+    let miliSeconds = Math.floor(elapsedTime % 1000 / 10);
 
-const buttonTimerStart = document.getElementById('timerStart');
-buttonTimerStart.addEventListener('click', function(){
-    if (timerState == 0) {
-        timerState = 1;
-        runTimer(Date.now(),0);
-        buttonTimerStart.setAttribute('value','Pause');
+    hours = String(hours).padStart(2,"0");
+    minutes = String(minutes).padStart(2,"0");
+    seconds = String(seconds).padStart(2,"0");
+    miliSeconds = String(miliSeconds).padStart(2,"0");
+    
+    timerInfo_p.textContent = `${hours}:${minutes}:${seconds}:${miliSeconds}`;
+}
 
-    } else if (timerState == 1) {
-        timerState = 2;
-        clearInterval(timerId);
-        buttonTimerStart.setAttribute('value','Resume');        
-
-    } else {
-        timerState = 1;
-        let hours = parseInt(textElapsedTime.textContent.slice(0,2)) * (60 * 60 * 1000);
-        let mins = parseInt(textElapsedTime.textContent.slice(3,5)) * (60 * 1000);
-        let secs = parseInt(textElapsedTime.textContent.slice(6,8)) * (1000);
-        runTimer(Date.now(),hours + mins + secs);
-        buttonTimerStart.setAttribute('value','Pause');
+const timerStart_button = document.getElementById('timer-start');
+timerStart_button.addEventListener('click', function(){
+    if (!isRunning) {
+        startTime = Date.now() - elapsedTime;
+        timerId = setInterval(updateDisplay, 10);
+        isRunning = true;
     }
 });
 
-const buttonTimerReset = document.getElementById('timerReset');
-buttonTimerReset.addEventListener('click', function(){
+const timerStop_button = document.getElementById('timer-stop');
+timerStop_button.addEventListener('click',function(){
+    if (isRunning){
+        clearInterval(timerId);
+        elapsedTime = Date.now() - startTime;
+        isRunning = false;
+    }
+});
+
+const timerReset_button = document.getElementById('timer-reset');
+timerReset_button.addEventListener('click', function(){
     clearInterval(timerId);
-    timerId = 0;
-    timerState = 0;
-    textElapsedTime.textContent = '00:00:00';
-    buttonTimerStart.setAttribute('value','Start');
+    startTime = 0;
+    elapsedTime = 0;
+    isRunning = false;
+    timerInfo_p.textContent = '00:00:00:00';
 });

@@ -1,23 +1,23 @@
-const info = document.getElementById('info-text');
+const info_p = document.getElementById('info-text');
 let num1 = 0;
 let num2 = 0;
 let lastOperator = '';
 let isOperator = false;
 
-const numbers = document.querySelectorAll('.number-area button');
-numbers.forEach(function(n) {
+const numbers_button = document.querySelectorAll('.numbers button');
+numbers_button.forEach(function(n) {
     n.addEventListener('click',function(){
         if (isOperator) {
-            info.innerHTML = parseInt(n.innerHTML);
+            info_p.innerHTML = parseInt(n.innerHTML);
         } else {
-            info.innerHTML = parseInt(info.innerHTML + n.innerHTML);
+            info_p.innerHTML = parseInt(info_p.innerHTML + n.innerHTML);
         }
         isOperator = false;
     });
 });
 
-const operators = document.querySelectorAll('.operator-area button');
-operators.forEach(function(o) {
+const operators_button = document.querySelectorAll('.operators button');
+operators_button.forEach(function(o) {
     o.addEventListener('click',function(){
         let operator = o.innerHTML;
 
@@ -26,17 +26,17 @@ operators.forEach(function(o) {
             num2 = 0;
             lastOperator = '';
             isOperator = false;
-            info.innerHTML = num1;
+            info_p.innerHTML = num1;
             return;
         }
 
         if (lastOperator == '') {
-            num1 = parseInt(info.innerHTML);
+            num1 = parseInt(info_p.innerHTML);
             lastOperator = operator;
         } else {            
-            num2 = parseInt(info.innerHTML);
+            num2 = parseInt(info_p.innerHTML);
             num1 = compute(lastOperator,num1,num2);
-            info.innerHTML = num1;
+            info_p.innerHTML = num1;
 
             if (operator == '=') {
                 lastOperator = '';

@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 0;
 }
 
 body {
@@ -9,44 +8,43 @@ body {
     text-align: center;
 }
 
-.header {
-    margin: 40px auto;
+header {
+    margin: 20px auto;
 }
 
 .container {
+    border: 2px solid grey;
     width: 200px;
-    margin: 50px auto;
-    background-color: #000;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
 .color-area {
-    line-height: 50px;
-    margin: 10px 0;
-}
-
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: green;
-}
-
-.blue {
-    background-color: blue;
+    background-color: rgb(0,0,0);
+    padding: 10px 0;
 }
 
 .color-area p {
-    width: 40px;
-    border: 1px solid black;
-    line-height: 40px;
+    border: 1px solid grey;
+    color: white;
     display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
+    width: 40px;
+    margin: 5px;
+    font-size: 1.4rem;
 }
 
 .color-area input {
     cursor: pointer;
+}
+
+#info-red {
+    background-color: red;
+}
+
+#info-green {
+    background-color: green;
+}
+
+#info-blue {
+    background-color: blue;
 }

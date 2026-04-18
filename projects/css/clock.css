@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 0;
 }
 
 body {
@@ -9,39 +8,55 @@ body {
     text-align: center;
 }
 
-.header {
-    margin: 40px auto;
+header {
+    margin: 20px auto;
 }
 
 .container {
-    border: 4px solid wheat;
+    border: 2px solid grey;
     width: 300px;
-    margin: 50px auto;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
 .clock-area {
     background-color: tomato;
-    padding: 10px 0;
 }
 
 .clock-area p {
-    font-size: 24px;
+    color: white;
+    font-size: 1.5rem;
     padding: 20px 0;
 }
 
 .timer-area {
     background-color: skyblue;
-    padding: 10px 0;
 }
 
 .timer-area input {
+    color: white;
+    border: none;
     width: 80px;
-    height: 30px;
+    font-size: 1.2rem;
     margin: 10px 0;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .timer-area p {
-    font-size: 40px;
-    padding: 20px 0;
+    font-size: 2.5rem;
+    padding: 5px 0;
+}
+
+#timer-start {
+    background-color: green;
+}
+
+#timer-stop {
+    background-color: red;
+}
+
+#timer-reset {
+    background-color: blue;
 }
