@@ -1,55 +1,35 @@
-function getCompChoice () {
-    let comp = Math.random();
+const choices = ['','rock','paper','scissor'];
+const infoText_p = document.getElementById('info-text');
+infoText_p.textContent = '.';
 
-    if (comp < 0.34) return 'rock';
-    if (comp >= 0.34 && comp <= 0.67) return 'paper';
-    return 'scissor';
-}
+const comp_img = document.querySelector('#comp');
+const compInfo_p = document.getElementById('comp-info');
 
-function getResult(player, comp) {
-    if (player == comp) return 'DRAW';
-    if (player == 'rock') return (comp == 'scissor') ? 'WIN' : 'LOSE';
-    if (player == 'paper') return (comp == 'rock') ? 'WIN' : 'LOSE';
-    if (player == 'scissor') return (comp == 'paper') ? 'WIN' : 'LOSE';
-}
-
-function rotateImages() {
-    const compImage = document.querySelector('#comp');
-    const choices = ['rock','paper','scissor'];
-    let i = 0;
-    let counter = 0;
-    setInterval(function() {
-        if (counter == 9) {
-            clearInterval;
-            return;
-        }
-
-        compImage.setAttribute('src','img/' + choices[i] + '.jpg');
-        i++;
-        counter++;
-        if (i == choices.length) i = 0;
-    }, 100);
-}
-
-const playerInfo = document.getElementById('player-text');
-let playerName = playerInfo.textContent;
-
-playerInfo.addEventListener('click',function(){
-    let newName = prompt('Enter your name:');
-    playerName = (newName == undefined) ? playerName : newName;
-    playerInfo.textContent = playerName;
-});
+const playerInfo_p = document.getElementById('player-info');
+let playerName = playerInfo_p.textContent;
 
 let compScore = 0;
 let playerScore = 0;
 
-let playerChoices = document.querySelectorAll('.player-area img');
-playerChoices.forEach(function(choice) {
-    choice.addEventListener('click',function(){
-        const comp = getCompChoice();
-        const player = choice.getAttribute('id');
-        
-        const result = getResult(player,comp);
+playerInfo_p.addEventListener('click',function(){
+    let newName = prompt('Enter your name:');
+    if (newName != null && newName != '') {
+        playerName = newName;
+        compScore = 0;
+        playerScore = 0;
+        playerInfo_p.textContent = playerName;
+        compInfo_p.textContent = "Computer";
+        infoText_p.textContent = '.';
+    }
+});
+
+let playerChoices_div = document.querySelectorAll('.player-area img');
+playerChoices_div.forEach(function(p) {
+    p.addEventListener('click',function(){
+        const comp = Math.floor(Math.random() * 3 + 1);
+        const player = p.getAttribute('id').split('player')[1];        
+
+        const result = getResult(choices[player],choices[comp]);
 
         if (result == 'WIN') {
             playerScore++;
@@ -60,18 +40,36 @@ playerChoices.forEach(function(choice) {
         rotateImages();
 
         setTimeout(function(){
-            const compImage = document.querySelector('#comp');
-            compImage.setAttribute('src','img/' + comp + '.jpg');
-
-            const infoText = document.getElementById('info-text');
-            infoText.innerHTML = result;
-
-            const compText = document.getElementById('comp-text');
-            compText.innerHTML = 'Computer : ' + compScore ;
-
-            const playerText = document.getElementById('player-text');
-            playerText.innerHTML = playerName + ' : ' + playerScore ;
-            
+            comp_img.setAttribute('src','img/rps' + comp + '.jpg');
+            compInfo_p.textContent = `Computer : ${compScore}`;
+            infoText_p.textContent = result;
+            playerInfo_p.textContent = `${playerName} : ${playerScore}`;            
         },1000);
     });
 });
+
+function getResult(player, comp) {
+    if (player == comp) return 'DRAW';
+    if (player == 'rock') return (comp == 'scissor') ? 'WIN' : 'LOSE';
+    if (player == 'paper') return (comp == 'rock') ? 'WIN' : 'LOSE';
+    if (player == 'scissor') return (comp == 'paper') ? 'WIN' : 'LOSE';
+}
+
+function rotateImages() {
+    let i = 1;
+    let counter = 1;
+    infoText_p.textContent = '.';
+    
+    setInterval(function() {
+        if (counter == 9) {
+            clearInterval;
+            return;
+        }
+
+        comp_img.setAttribute('src','img/rps' + i + '.jpg');
+        infoText_p.textContent += "."
+        i++;
+        counter++;
+        if (i == choices.length) i = 1;
+    }, 100);
+}

@@ -1,53 +1,49 @@
 * {
     margin: 0;
     padding: 0;
-    /* line-height: 0; */
 }
 
 body {
-    background: lightgrey;
+    background-color: lightgrey;
     text-align: center;
 }
 
-.header {
-    margin: 40px auto;
+header {
+    margin: 20px auto;
 }
 
 .container {
-    width: 400px;
-    background-color: rgb(60, 60, 60);
-    border: 2px solid wheat;
-    margin: 50px auto;
-    padding: 5px;
-    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 300px;
+    margin: 20px auto;
 }
 
-.movie-card {
+.card-area {
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0;
 }
 
-.movie-card img {
-    width: 100px;
+.card-area img {
     border: 2px solid tomato;
+    width: 30%;
     cursor: pointer;
 }
 
-.movie-info {
-    background-color: wheat;
-    margin: 20px;
+.info-area {
+    background-color: rgb(60, 60, 60);
     display: none;
 }
 
-.movie-info p {
+.info-area p {
+    color: white;
     padding: 5px;
     font-size: 1rem;
 }
 
-.seat-layout {
-    background-color: wheat;    
-    margin: 20px;
+.seat-area {
+    background-color: rgb(60, 60, 60);
     padding: 10px 0;
     display: none;
     grid-template-columns: repeat(4, auto);
@@ -55,31 +51,38 @@ body {
     justify-content: center;
 }
 
-.seat-layout div {
+.seat-area div {
     background-color: rgb(100, 100, 100);
     border: 2px solid lightskyblue;
     color: lightskyblue;
     padding: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    box-sizing: border-box;
 }
 
-.seat-layout div:hover {
+.seat-area div:hover {
     border: 2px solid tomato;
 }
 
 #info-title {
     color: rgb(179, 46, 46);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+}
+
+#info-genre {
+    color: rgb(52, 192, 96);
 }
 
 #info-description {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-style: italic;
 }
 
-#info-cast {
-    color: rgb(15, 111, 170);
+#info-director {
     font-size: 1rem;
+}
+
+#info-cast {
+    color: rgb(69, 151, 201);
+    font-size: 0.75rem;
 }

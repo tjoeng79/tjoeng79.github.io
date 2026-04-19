@@ -19,24 +19,23 @@ let layout3 = [-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0];
 
 let selectedLayout;
 
-const seats = document.querySelectorAll('.seat');
+const seats_div = document.querySelectorAll('.seat');
+const infoArea_div = document.querySelector('.info-area');
+const seatArea_div = document.querySelector('.seat-area');
 
-const movieInfo = document.querySelector('.movie-info');
-const infoTitle = document.getElementById('info-title');
-const infoYear = document.getElementById('info-year');
-const infoGenre = document.getElementById('info-genre');
-const infoDescription = document.getElementById('info-description');
-const infoDirector = document.getElementById('info-director');
-const infoCast = document.getElementById('info-cast');
-const seatLayout = document.querySelector('.seat-layout');
+const infoTitle_p = document.getElementById('info-title');
+const infoYear_p = document.getElementById('info-year');
+const infoGenre_p = document.getElementById('info-genre');
+const infoDescription_p = document.getElementById('info-description');
+const infoDirector_p = document.getElementById('info-director');
+const infoCast_p = document.getElementById('info-cast');
 
-const movieCards = document.querySelectorAll('.movie-card img');
-
-movieCards.forEach(function(card){
+const cards_img = document.querySelectorAll('.card-area img');
+cards_img.forEach(function(card){
     card.addEventListener('click',function(){
         let cardId = card.getAttribute('id');
-        movieInfo.style.display = 'block';
-        seatLayout.style.display = 'grid';
+        infoArea_div.style.display = 'block';
+        seatArea_div.style.display = 'grid';
 
         if (cardId == 'card-1') {
             showMovieInfo(movie1);
@@ -58,7 +57,7 @@ movieCards.forEach(function(card){
     });
 });
 
-seats.forEach(function(seat){
+seats_div.forEach(function(seat){
     seat.addEventListener('click',function(e){
         let seatNo = e.target.textContent;
 
@@ -77,17 +76,17 @@ seats.forEach(function(seat){
 });
 
 function showMovieInfo(movie) {
-    infoTitle.textContent = movie.title;
-    infoYear.textContent = movie.year;
-    infoGenre.textContent = movie.genre;
-    infoDescription.textContent = movie.description;
-    infoDirector.textContent = movie.director;
-    infoCast.textContent = movie.cast;
+    infoTitle_p.textContent = movie.title;
+    infoYear_p.textContent = movie.year;
+    infoGenre_p.textContent = movie.genre;
+    infoDescription_p.innerHTML = `&quot${movie.description}&quot`;
+    infoDirector_p.textContent = movie.director;
+    infoCast_p.textContent = movie.cast;
 }
 
 function showSeatLayout(layout) {
     let i = 0;    
-    seats.forEach(function(seat){
+    seats_div.forEach(function(seat){
         switch (layout[++i]){
             case -1:
                 seat.style.color = 'darkgrey';
