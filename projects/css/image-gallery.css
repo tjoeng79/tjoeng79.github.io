@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 0;
 }
 
 body {
@@ -9,28 +8,36 @@ body {
     text-align: center;
 }
 
-.header {
-    margin: 40px auto;
+header {
+    margin: 20px auto;
 }
 
 .container {
-    width: 600px;
-    margin: 50px auto;
-    border: 4px solid tomato;
+    border: 2px solid grey;
+    width: 300px;
+    margin: 20px auto;
     overflow: auto;
 }
 
+.main-area {
+    line-height: 0;
+}
+
+.main-area img {
+    width: 100%;
+}
+
 .thumb {
-    width: 200px;
+    border: 1px solid lightsteelblue;
+    width: 100px;
     float: left;
-    border: 2px solid tomato;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.5;
     box-sizing: border-box;
 }
 
 .thumb:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 @keyframes fadeIn {
@@ -40,10 +47,11 @@ body {
 }
 
 .fade {
-    opacity: 0;
+    opacity: 0.25;
     animation: fadeIn 1s forwards;
 }
 
 .active {
+    border: 1px solid tomato;
     opacity: 1;
 }

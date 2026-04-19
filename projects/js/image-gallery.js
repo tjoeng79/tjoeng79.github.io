@@ -1,17 +1,17 @@
-const container = document.querySelector('.container');
-const mainImage = document.querySelector('.main-image');
-const thumbs =document.querySelectorAll('.thumb');
+const mainImage_img = document.getElementById('main-image');
+const thumbsArea_div = document.querySelector('.thumbnail-area');
+const thumbs_img = document.querySelectorAll('.thumb');
 
-container.addEventListener('click', function(e){
+thumbsArea_div.addEventListener('click', function(e){
     if (e.target.className == 'thumb'){
-        mainImage.src = e.target.src;
-        mainImage.classList.add('fade');
+        mainImage_img.src = e.target.src;
+        mainImage_img.classList.add('fade');
 
         setTimeout(function(){
-            mainImage.classList.remove('fade');
+            mainImage_img.classList.remove('fade');
         }, 1000);
 
-        thumbs.forEach(function(thumb) {
+        thumbs_img.forEach(function(thumb) {
             thumb.classList.remove('active');
         });
 
