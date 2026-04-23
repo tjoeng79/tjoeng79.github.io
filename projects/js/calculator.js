@@ -1,63 +1,38 @@
-const info_p = document.getElementById('info-text');
-let num1 = 0;
-let num2 = 0;
-let lastOperator = '';
-let isOperator = false;
+const result_p = document.getElementById('result');
 
 const numbers_button = document.querySelectorAll('.numbers button');
 numbers_button.forEach(function(n) {
-    n.addEventListener('click',function(){
-        if (isOperator) {
-            info_p.innerHTML = parseInt(n.innerHTML);
-        } else {
-            info_p.innerHTML = parseInt(info_p.innerHTML + n.innerHTML);
-        }
-        isOperator = false;
-    });
+  n.addEventListener('click',function(){
+    if (result_p.innerHTML == 0){
+      result_p.innerHTML = n.innerHTML;
+    } else {
+      result_p.innerHTML = result_p.innerHTML + n.innerHTML;
+    }
+  });
 });
 
 const operators_button = document.querySelectorAll('.operators button');
 operators_button.forEach(function(o) {
-    o.addEventListener('click',function(){
-        let operator = o.innerHTML;
-
-        if (operator == 'C') {
-            num1 = 0;
-            num2 = 0;
-            lastOperator = '';
-            isOperator = false;
-            info_p.innerHTML = num1;
-            return;
-        }
-
-        if (lastOperator == '') {
-            num1 = parseInt(info_p.innerHTML);
-            lastOperator = operator;
-        } else {            
-            num2 = parseInt(info_p.innerHTML);
-            num1 = compute(lastOperator,num1,num2);
-            info_p.innerHTML = num1;
-
-            if (operator == '=') {
-                lastOperator = '';
-            } else {
-                lastOperator = operator;
-            }
-        }
-
-        isOperator = true;
-    });
+  o.addEventListener('click',function(){
+    result_p.innerHTML += o.innerHTML;
+  });
 });
 
-function compute(operator, num1, num2) {
-    switch (operator){
-        case '+':
-            return num1 + num2;
-        case '-':
-            return num1 - num2;
-        case '*':
-            return num1 * num2;
-        case '/':
-            return num1 / num2;
-    }
-}
+const equal_button = document.getElementById('equal');
+equal_button.addEventListener('click',function(){
+    result_p.innerHTML = eval(result_p.innerHTML);
+});
+
+const clear_button = document.getElementById('clear');
+clear_button.addEventListener('click',function(){
+    result_p.innerHTML = 0;
+});
+
+const backspace_button = document.getElementById('backspace');
+backspace_button.addEventListener('click',function(){
+    if (result_p.innerHTML.length == 1) {
+        result_p.innerHTML = 0;
+    } else {
+        result_p.innerHTML = result_p.innerHTML.slice(0,result_p.innerHTML.length - 1);
+    };
+});

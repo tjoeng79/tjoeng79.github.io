@@ -1,71 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: lightgrey;
-    text-align: center;
+  background-color: lightgrey;
+  text-align: center;
 }
 
 header {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .container {
-    border: 2px solid grey;
-    width: 300px;
-    margin: 20px auto;
-    border-radius: 5px;
+  border: 2px solid grey;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 5px;
 }
 
 .container button {
-    border: 1px solid grey;
-    color: white;
-    width: 40px;
-    height: 40px;
-    margin: 5px 2px;
-    font-size: 1.4rem;
-    border-radius: 5px;
-    cursor: pointer;
+  border: 1px solid grey;
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin: 1px 1px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .container button:hover {
-    border: 2px solid white;
+  border: 2px solid white;
 }
 
 .display-area {
-    background-color: rgb(60, 60, 60);
+  background-color: rgb(60, 60, 60);
 }
 
 .display-area p {
-    color: white;
-    font-size: 1.6rem;
-    text-align: right;
-    padding: 10px;
-    overflow: hidden;
+  color: white;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .input-area {
-    background-color: dimgrey;
-    padding: 10px;
-    display: grid;
-    grid-template-areas: 
-        'operatorArea numberArea numberArea';
-}
-
-.operators {
-    grid-area: operatorArea;
-}
-
-.operators button {
-    background-color: tomato;
+  background-color: dimgrey;
+  padding: 5px;
+  display: grid;
+  gap: 1px;
+  grid-template-areas: 
+    'numberArea numberArea numberArea operatorArea otherArea';
 }
 
 .numbers {
-    grid-area: numberArea;
+  grid-area: numberArea;
 }
 
 .numbers button {
-    background-color: darkslategrey;
+  background-color: darkslategrey;
+}
+
+.operators {
+  grid-area: operatorArea;
+}
+
+.operators button {
+  background-color: tomato;
+}
+
+.others {
+  grid-area: otherArea;
+}
+
+.others button {
+  background-color: tomato;
+}
+
+.others #equal {
+  height: 50%;
 }
