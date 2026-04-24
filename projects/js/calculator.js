@@ -7,7 +7,7 @@ numbers_button.forEach(function(n) {
       result_p.innerHTML = n.innerHTML;
     } else {
       result_p.innerHTML = result_p.innerHTML + n.innerHTML;
-    }
+    };
   });
 });
 
