@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock</title>
-    <link rel="stylesheet" href="css/clock.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <link rel="stylesheet" href="css/clock.css">
 </head>
 <body>
-    <header>
-        <h1>Clock</h1>
-    </header>
-    <div class="container">
-        <div class="clock-area">
-            <p id="clock-info">00:00:00</p>
-        </div>
-        <div class="countdown-area">
-            <input type="datetime-local" id="countdown-target">
-            <input type="button" value="&#9654" id="countdown-start">
-            <input type="button" value="&#9724" id="countdown-stop">
-            <p id="countdown-info">0 days 0 hours 0 minutes 0 seconds</p>
-        </div>
-        <div class="stopwatch-area">
-            <input type="button" value="Start" id="stopwatch-start">
-            <input type="button" value="Stop" id="stopwatch-stop">
-            <input type="button" value="Reset" id="stopwatch-reset">
-            <p id="stopwatch-info">00:00:00:<small>00</small></p>
-        </div>
+  <header>
+    <h1>Clock</h1>
+  </header>
+  <div class="container">
+    <div class="clock-area">
+      <p id="clock-info">00:00:00</p>
     </div>
-    <script src="js/clock.js"></script>
+    <div class="countdown-area">
+      <input type="datetime-local" id="countdown-target">
+      <input type="button" value="&#9654" id="countdown-start">
+      <input type="button" value="&#9724" id="countdown-stop">
+      <p id="countdown-info">0 days 0 hours 0 minutes 0 seconds</p>
+    </div>
+    <div class="stopwatch-area">
+      <input type="button" value="Start" id="stopwatch-start">
+      <input type="button" value="Stop" id="stopwatch-stop">
+      <input type="button" value="Reset" id="stopwatch-reset">
+      <p id="stopwatch-info">00:00:00:<small>00</small></p>
+    </div>
+  </div>
+  <script src="js/clock.js"></script>
 </body>
 </html>
