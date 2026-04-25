@@ -1,78 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: lightgrey;
-    text-align: center;
+  background-color: lightgrey;
+  text-align: center;
 }
 
 header {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .container {
-    border: 2px solid grey;
-    width: 300px;
-    margin: 20px auto;
-    border-radius: 20px;
-    padding: 0;
-    position: relative;
+  border: 2px solid grey;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 0;
+  position: relative;
 }
 
 .container img {
-    width: 50px;
-    border: 3px solid lightgrey;
-    border-radius: 50%;
+  width: 50px;
+  border: 3px solid lightgrey;
+  border-radius: 50%;
 }
 
 .comp-area {
-    background-color: tomato;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    border-radius: 20px 20px 0 0;
+  background-color: tomato;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px 20px 0 0;
 }
 
 .comp-area p {
-    color: skyblue;
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;    
-    text-shadow: 1px 2px 2px black;
+  color: skyblue;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;    
+  text-shadow: 1px 2px 2px black;
 }
 
 .player-area {
-    background-color: skyblue;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    border-radius: 0 0 20px 20px;
+  background-color: skyblue;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 0 0 20px 20px;
 }
 
 .player-area p {
-    color: tomato;
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 10px;
-    text-shadow: 1px 2px 2px black;
-    cursor: pointer;
+  color: tomato;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 1px 2px 2px black;
+  cursor: pointer;
 }
 
 .player-area img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .info-area {
-    background-color: lightgrey;
-    width: 50%;
-    border-radius: 8px;
-    position: absolute;
-    top: 44%;
-    left: 25%;
+  background-color: lightgrey;
+  width: 50%;
+  border-radius: 8px;
+  position: absolute;
+  top: 44%;
+  left: 25%;
 }
 
 .info-area p {
-    color: rgb(74, 74, 74);
-    font-size: 1rem;
-    margin: 5px;
+  color: rgb(74, 74, 74);
+  font-size: 1rem;
+  margin: 5px;
 }

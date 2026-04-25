@@ -1,57 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: lightgrey;
-    text-align: center;
+  background-color: lightgrey;
+  text-align: center;
 }
 
 header {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .container {
-    border: 2px solid grey;
-    width: 300px;
-    margin: 20px auto;
-    overflow: auto;
+  border: 2px solid grey;
+  width: 300px;
+  margin: 20px auto;
+  overflow: auto;
 }
 
 .main-area {
-    line-height: 0;
+  line-height: 0;
 }
 
 .main-area img {
-    width: 100%;
+  width: 100%;
 }
 
 .thumb {
-    border: 1px solid lightsteelblue;
-    width: 100px;
-    float: left;
-    cursor: pointer;
-    opacity: 0.5;
-    box-sizing: border-box;
+  border: 1px solid lightsteelblue;
+  width: 100px;
+  float: left;
+  cursor: pointer;
+  opacity: 0.5;
+  box-sizing: border-box;
 }
 
 .thumb:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade {
-    opacity: 0.25;
-    animation: fadeIn 1s forwards;
+  opacity: 0.25;
+  animation: fadeIn 1s forwards;
 }
 
 .active {
-    border: 1px solid tomato;
-    opacity: 1;
+  border: 1px solid tomato;
+  opacity: 1;
 }

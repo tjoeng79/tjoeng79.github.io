@@ -1,12 +1,12 @@
 class Movie {
-    constructor(title, year, genre, description, director, cast) {
-        this.title = title;
-        this.year = year;
-        this.genre = genre;
-        this.description = description;
-        this.director = director;
-        this.cast = cast;
-    }
+  constructor(title, year, genre, description, director, cast) {
+    this.title = title;
+    this.year = year;
+    this.genre = genre;
+    this.description = description;
+    this.director = director;
+    this.cast = cast;
+  }
 }
 
 const movie1 = new Movie('I Am Sam','2001','Drama','An intellectually disabled man fights for custody of his 7-year-old daughter and in the process teaches his cold-hearted lawyer the value of love and family.','Jessie Nelson','Sean Penn, Michelle Pfeiffer, Dakota Fanning');
@@ -32,74 +32,74 @@ const infoCast_p = document.getElementById('info-cast');
 
 const cards_img = document.querySelectorAll('.card-area img');
 cards_img.forEach(function(card){
-    card.addEventListener('click',function(){
-        let cardId = card.getAttribute('id');
-        infoArea_div.style.display = 'block';
-        seatArea_div.style.display = 'grid';
+  card.addEventListener('click',function(){
+    let cardId = card.getAttribute('id');
+    infoArea_div.style.display = 'block';
+    seatArea_div.style.display = 'grid';
 
-        if (cardId == 'card-1') {
-            showMovieInfo(movie1);
-            showSeatLayout(layout1);
-            selectedLayout = layout1;
-        }
+    if (cardId == 'card-1') {
+      showMovieInfo(movie1);
+      showSeatLayout(layout1);
+      selectedLayout = layout1;
+    };
 
-        if (cardId == 'card-2') {
-            showMovieInfo(movie2);
-            showSeatLayout(layout2);
-            selectedLayout = layout2;
-        }
+    if (cardId == 'card-2') {
+      showMovieInfo(movie2);
+      showSeatLayout(layout2);
+      selectedLayout = layout2;
+    };
 
-        if (cardId == 'card-3') {
-            showMovieInfo(movie3);
-            showSeatLayout(layout3);
-            selectedLayout = layout3;
-        }
-    });
+    if (cardId == 'card-3') {
+      showMovieInfo(movie3);
+      showSeatLayout(layout3);
+      selectedLayout = layout3;
+    };
+  });
 });
 
 seats_div.forEach(function(seat){
-    seat.addEventListener('click',function(e){
-        let seatNo = e.target.textContent;
+  seat.addEventListener('click',function(e){
+    let seatNo = e.target.textContent;
 
-        if (selectedLayout[seatNo] == 0){
-            selectedLayout[seatNo] = 1;
-            e.target.style.color = 'tomato';
-            e.target.style.borderColor = 'tomato';
-        } else if (selectedLayout[seatNo] == 1) {
-            selectedLayout[seatNo] = 0;
-            e.target.style.color = 'lightgreen';
-            e.target.style.borderColor = 'lightgreen';
-        } else {
-            alert(`SeatNo ${seatNo} is un-available.`);
-        }
-    });
+    if (selectedLayout[seatNo] == 0){
+      selectedLayout[seatNo] = 1;
+      e.target.style.color = 'tomato';
+      e.target.style.borderColor = 'tomato';
+    } else if (selectedLayout[seatNo] == 1) {
+      selectedLayout[seatNo] = 0;
+      e.target.style.color = 'lightgreen';
+      e.target.style.borderColor = 'lightgreen';
+    } else {
+      alert(`SeatNo ${seatNo} is un-available.`);
+    };
+  });
 });
 
 function showMovieInfo(movie) {
-    infoTitle_p.textContent = movie.title;
-    infoYear_p.textContent = movie.year;
-    infoGenre_p.textContent = movie.genre;
-    infoDescription_p.innerHTML = `&quot${movie.description}&quot`;
-    infoDirector_p.textContent = movie.director;
-    infoCast_p.textContent = movie.cast;
+  infoTitle_p.textContent = movie.title;
+  infoYear_p.textContent = movie.year;
+  infoGenre_p.textContent = movie.genre;
+  infoDescription_p.innerHTML = `&quot${movie.description}&quot`;
+  infoDirector_p.textContent = movie.director;
+  infoCast_p.textContent = movie.cast;
 }
 
 function showSeatLayout(layout) {
-    let i = 0;    
-    seats_div.forEach(function(seat){
-        switch (layout[++i]){
-            case -1:
-                seat.style.color = 'darkgrey';
-                seat.style.borderColor = 'darkgrey';
-                break;
-            case 0:
-                seat.style.color = 'lightgreen';
-                seat.style.borderColor = 'lightgreen';
-                break;
-            case 1:
-                seat.style.color = 'tomato';
-                seat.style.borderColor = 'tomato';
-                break;            
-        }
-    })
+  let i = 0;    
+  seats_div.forEach(function(seat){
+    switch (layout[++i]){
+      case -1:
+        seat.style.color = 'darkgrey';
+        seat.style.borderColor = 'darkgrey';
+        break;
+      case 0:
+        seat.style.color = 'lightgreen';
+        seat.style.borderColor = 'lightgreen';
+        break;
+      case 1:
+        seat.style.color = 'tomato';
+        seat.style.borderColor = 'tomato';
+        break;            
+    }
+  })
 }

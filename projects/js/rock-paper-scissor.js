@@ -12,64 +12,64 @@ let compScore = 0;
 let playerScore = 0;
 
 playerInfo_p.addEventListener('click',function(){
-    let newName = prompt('Enter your name:');
-    if (newName != null && newName != '') {
-        playerName = newName;
-        compScore = 0;
-        playerScore = 0;
-        playerInfo_p.textContent = playerName;
-        compInfo_p.textContent = "Computer";
-        infoText_p.textContent = '.';
-    }
+  let newName = prompt('Enter your name:');
+  if (newName != null && newName != '') {
+    playerName = newName;
+    compScore = 0;
+    playerScore = 0;
+    playerInfo_p.textContent = playerName;
+    compInfo_p.textContent = "Computer";
+    infoText_p.textContent = '.';
+  };
 });
 
 let playerChoices_div = document.querySelectorAll('.player-area img');
 playerChoices_div.forEach(function(p) {
-    p.addEventListener('click',function(){
-        const comp = Math.floor(Math.random() * 3 + 1);
-        const player = p.getAttribute('id').split('player')[1];        
+  p.addEventListener('click',function(){
+    const comp = Math.floor(Math.random() * 3 + 1);
+    const player = p.getAttribute('id').split('player')[1];        
 
-        const result = getResult(choices[player],choices[comp]);
+    const result = getResult(choices[player],choices[comp]);
 
-        if (result == 'WIN') {
-            playerScore++;
-        } else if (result == 'LOSE') {
-            compScore++;
-        }
+    if (result == 'WIN') {
+      playerScore++;
+    } else if (result == 'LOSE') {
+      compScore++;
+    };
 
-        rotateImages();
+    rotateImages();
 
-        setTimeout(function(){
-            comp_img.setAttribute('src','img/rps' + comp + '.jpg');
-            compInfo_p.textContent = `Computer : ${compScore}`;
-            infoText_p.textContent = result;
-            playerInfo_p.textContent = `${playerName} : ${playerScore}`;            
-        },1000);
-    });
+    setTimeout(function(){
+      comp_img.setAttribute('src','img/rps' + comp + '.jpg');
+      compInfo_p.textContent = `Computer : ${compScore}`;
+      infoText_p.textContent = result;
+      playerInfo_p.textContent = `${playerName} : ${playerScore}`;            
+    },1000);
+  });
 });
 
 function getResult(player, comp) {
-    if (player == comp) return 'DRAW';
-    if (player == 'rock') return (comp == 'scissor') ? 'WIN' : 'LOSE';
-    if (player == 'paper') return (comp == 'rock') ? 'WIN' : 'LOSE';
-    if (player == 'scissor') return (comp == 'paper') ? 'WIN' : 'LOSE';
+  if (player == comp) return 'DRAW';
+  if (player == 'rock') return (comp == 'scissor') ? 'WIN' : 'LOSE';
+  if (player == 'paper') return (comp == 'rock') ? 'WIN' : 'LOSE';
+  if (player == 'scissor') return (comp == 'paper') ? 'WIN' : 'LOSE';
 }
 
 function rotateImages() {
-    let i = 1;
-    let counter = 1;
-    infoText_p.textContent = '.';
-    
-    setInterval(function() {
-        if (counter == 9) {
-            clearInterval;
-            return;
-        }
+  let i = 1;
+  let counter = 1;
+  infoText_p.textContent = '.';
+  
+  setInterval(function() {
+    if (counter == 9) {
+      clearInterval;
+      return;
+    };
 
-        comp_img.setAttribute('src','img/rps' + i + '.jpg');
-        infoText_p.textContent += "."
-        i++;
-        counter++;
-        if (i == choices.length) i = 1;
-    }, 100);
+    comp_img.setAttribute('src','img/rps' + i + '.jpg');
+    infoText_p.textContent += "."
+    i++;
+    counter++;
+    if (i == choices.length) i = 1;
+  }, 100);
 }
