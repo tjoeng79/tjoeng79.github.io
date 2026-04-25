@@ -1,54 +1,107 @@
 /** Import **/
 @import url(author-reset.css);
 @import url(author-clearfix.css);
-@import url(user-global.css);
 
 
 /** Style **/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;                
+  background-image: linear-gradient(90deg,rgb(60, 45, 45),gray);
+}
+
+nav {
+  background-color:rgb(60, 45, 45);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+}
+
+nav li {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+nav a {
+  color: salmon;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+  background-color: rgb(100, 150, 180);
+}
+
+footer {    
+  background-color: rgba(60, 45, 45, .8);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #f0f0f0;
+}
+
+.copyright {
+  color: #f0f0f0;
+  font-size: 12px;
+  font-style: italic;
+}
+
 header {
-    border-top: 5px solid salmon;
-    margin-top: 36px;
+  border-top: 5px solid salmon;
+  margin-top: 36px;
 }
 
 main {
-    padding: 10px;
-    overflow: hidden;
+  padding: 10px;
+  overflow: hidden;
 }
 
 main table {
-    width: 100%;
-    border: 1px solid rgb(60, 45, 45);
+  width: 100%;
+  border: 1px solid rgb(60, 45, 45);
 }
 
 main th {
-    padding: 10px;
-    text-align: left;
-    color: #f0f0f0;
-    font-weight: bold;
-    background-color: rgb(100, 150, 180);
-    border-bottom: 1px solid rgb(60, 45, 45);
+  padding: 10px;
+  text-align: left;
+  color: #f0f0f0;
+  font-weight: bold;
+  background-color: rgb(100, 150, 180);
+  border-bottom: 1px solid rgb(60, 45, 45);
 }
 
 main tr:nth-child(2n) {
-    background-color: floralwhite;
+  background-color: floralwhite;
 }
 
 main tr:nth-child(2n+1) {
-    background-color: gainsboro;
+  background-color: gainsboro;
 }
 
 main tr:hover {
-    background-color: rgba(60, 45, 45, .3);
+  background-color: rgba(60, 45, 45, .3);
 }
 
 main td {
-    padding: 10px;
-    vertical-align: top;
-    border-bottom: 1px solid rgb(60, 45, 45);
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid rgb(60, 45, 45);
 }
 
 main td a {
-    font-size: 1.2rem;
-    font-style: italic;
-    text-decoration: none;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-decoration: none;
 }
