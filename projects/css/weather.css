@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+header {
+  margin: 20px auto;
+}
+
+.container {
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.input-area {
+  margin: 15px 0;
+  background-color: rgb(151, 151, 114);
+  border-radius: 10px;
+  min-width: 200px;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.5);
+  padding: 5px 0;
+}
+
+#city-input {
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 20%, 0.3);
+  border-radius: 10px;
+  margin: 5px;
+  width: 60%;
+}
+
+#submit-btn {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: hsl(122, 39%, 40%);
+}
+
+.weather-area {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.5);
+  min-width: 200px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.city-info, .temp-info {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0% ,0.75);
+  margin-bottom: 25px;
+}
+
+.humidity-info {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.desc-info {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.weather-symbol {
+  margin: 0;
+  font-size: 7.5rem;
+}
+
+.error-info {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
