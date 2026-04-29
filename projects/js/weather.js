@@ -19,7 +19,7 @@ submit_btn.addEventListener('click', async function(){
 });
 
 async function getWeatherData(city) {
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const response = await fetch(apiUrl);
 
   if (!response.ok) {
@@ -44,7 +44,7 @@ function displayWeatherInfo(data) {
   const weatherSymbol_p = document.createElement('p');
 
   cityInfo_p.textContent = city;
-  tempInfo_p.textContent = `${(temp - 273.15).toFixed(1)}°C`
+  tempInfo_p.textContent = `${Math.round(temp)}°C`
   humidityInfo_p.textContent = `Humidity: ${humidity}%`;
   descInfo_p.textContent = description;
   weatherSymbol_p.textContent = getWeatherSymbol(id);
