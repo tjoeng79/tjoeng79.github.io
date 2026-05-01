@@ -25,14 +25,16 @@ header {
 
 .input-area #task-description {
   font-size: 1.25rem;
-  width: 80%;
-  margin: 0 1px 0 5px;
+  width: 75%;
+  margin: 0 0 0 5px;
+  padding: 5px;
 }
 
 .input-area #task-add {
   background-color: rgb(21, 58, 222);
   color: white;
   width: 10%;
+
   border: 1px solid white;
   font-size: 1.1rem;
   cursor: pointer;
@@ -41,6 +43,7 @@ header {
 .task-area {
   background-color: rgb(173, 135, 84);
   padding: 5px 0;
+  /* display: none; */
 }
 
 .task-data {
