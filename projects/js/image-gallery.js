@@ -16,5 +16,5 @@ thumbsArea_div.addEventListener('click', function(e){
     });
 
     e.target.classList.add('active');
-  };
+  }
 });

@@ -15,7 +15,7 @@ submit_btn.addEventListener('click', async function(){
     }
   } else {
     displayError('Please enter a city');
-  };
+  }
 });
 
 async function getWeatherData(city) {
@@ -24,7 +24,7 @@ async function getWeatherData(city) {
 
   if (!response.ok) {
     throw new Error('Could not fetch weather data');
-  };
+  }
 
   return await response.json();
 }
@@ -80,7 +80,7 @@ function getWeatherSymbol(weatherId) {
       return '🌤';
     default:
       return '❓';
-  };
+  }
 }
 
 function displayError(message){

@@ -41,19 +41,19 @@ cards_img.forEach(function(card){
       showMovieInfo(movie1);
       showSeatLayout(layout1);
       selectedLayout = layout1;
-    };
+    }
 
     if (cardId == 'card-2') {
       showMovieInfo(movie2);
       showSeatLayout(layout2);
       selectedLayout = layout2;
-    };
+    }
 
     if (cardId == 'card-3') {
       showMovieInfo(movie3);
       showSeatLayout(layout3);
       selectedLayout = layout3;
-    };
+    }
   });
 });
 
@@ -71,7 +71,7 @@ seats_div.forEach(function(seat){
       e.target.style.borderColor = 'lightgreen';
     } else {
       alert(`SeatNo ${seatNo} is un-available.`);
-    };
+    }
   });
 });
 
@@ -101,5 +101,5 @@ function showSeatLayout(layout) {
         seat.style.borderColor = 'tomato';
         break;            
     }
-  })
+  });
 }

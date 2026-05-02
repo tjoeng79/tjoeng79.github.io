@@ -44,5 +44,5 @@ taskAdd_button.addEventListener('click',function() {
   if (description != '') {
     createTask(description);
     taskDescription_input.value = '';
-  };
+  }
 });

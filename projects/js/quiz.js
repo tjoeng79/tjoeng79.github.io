@@ -63,7 +63,7 @@ quizPrev_button.addEventListener('click',function(){
     quizNo--;
     clearSelection();
     showQuiz(quizNo);
-  };
+  }
 });
 
 const quizNext_button = document.getElementById('quiz-next');
@@ -72,7 +72,7 @@ quizNext_button.addEventListener('click',function(){
     quizNo++;
     clearSelection();
     showQuiz(quizNo);
-  };
+  }
 });
 
 const answerChoices_li = document.querySelectorAll('.answer-area ul li');
@@ -87,6 +87,6 @@ answerChoices_li.forEach(function(li){
       li.classList.add('answer-true');
     } else {
       li.classList.add('answer-false');
-    };
+    }
   });
 });

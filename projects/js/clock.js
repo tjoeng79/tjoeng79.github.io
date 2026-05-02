@@ -31,7 +31,7 @@ function cdUpdateDisplay() {
     countdownInfo_p.textContent = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
   } else {
     countdownInfo_p.textContent = `Time's Up!`;
-  };
+  }
 }
 
 const countdownStart_button = document.getElementById('countdown-start');
@@ -40,7 +40,7 @@ countdownStart_button.addEventListener('click', function() {
     cdTargetTime = Date.parse(countdownTarget_input.value);
     cdTimerId = setInterval(cdUpdateDisplay, 500);
     cdIsRunning = true;
-  };
+  }
 });
 
 const countdownStop_button = document.getElementById('countdown-stop');
@@ -83,7 +83,7 @@ stopwatchStart_button.addEventListener('click', function(){
     swStartTime = Date.now() - swElapsedTime;
     swTimerId = setInterval(swUpdateDisplay, 10);
     swIsRunning = true;
-  };
+  }
 });
 
 const stopwatchStop_button = document.getElementById('stopwatch-stop');
@@ -92,7 +92,7 @@ stopwatchStop_button.addEventListener('click',function(){
     clearInterval(swTimerId);
     swElapsedTime = Date.now() - swStartTime;
     swIsRunning = false;
-  };
+  }
 });
 
 const stopwatchReset_button = document.getElementById('stopwatch-reset');

@@ -20,7 +20,7 @@ playerInfo_p.addEventListener('click',function(){
     playerInfo_p.textContent = playerName;
     compInfo_p.textContent = "Computer";
     infoText_p.textContent = '.';
-  };
+  }
 });
 
 let playerChoices_div = document.querySelectorAll('.player-area img');
@@ -35,7 +35,7 @@ playerChoices_div.forEach(function(p) {
       playerScore++;
     } else if (result == 'LOSE') {
       compScore++;
-    };
+    }
 
     rotateImages();
 
@@ -64,7 +64,7 @@ function rotateImages() {
     if (counter == 9) {
       clearInterval;
       return;
-    };
+    }
 
     comp_img.setAttribute('src','img/rps' + i + '.jpg');
     infoText_p.textContent += "."

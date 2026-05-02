@@ -34,7 +34,7 @@ function cellClicked(){
 
   if (options[cellIndex] != '' || !isRunning) {
     return;
-  };
+  }
 
   updateCell(this, cellIndex);
   checkWinner();
@@ -48,7 +48,7 @@ function updateCell(cell, index){
     cell.style.color = 'blue';
   } else {
     cell.style.color = 'red';
-  };
+  }
 }
 
 function changePlayer(){
@@ -67,12 +67,12 @@ function checkWinner(){
 
     if (cellA == '' || cellB == '' || cellC == ''){
       continue;
-    };
+    }
 
     if (cellA == cellB && cellB == cellC) {
       roundWon = true;
       break;
-    };
+    }
   };
 
   if (roundWon) {
@@ -84,7 +84,7 @@ function checkWinner(){
 
   } else {
     changePlayer();
-  };
+  }
 }
 
 function restartGame(){

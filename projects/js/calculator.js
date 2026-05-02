@@ -7,7 +7,7 @@ numbers_button.forEach(function(n) {
       result_p.innerHTML = n.innerHTML;
     } else {
       result_p.innerHTML = result_p.innerHTML + n.innerHTML;
-    };
+    }
   });
 });
 
@@ -34,5 +34,5 @@ backspace_button.addEventListener('click',function(){
         result_p.innerHTML = 0;
     } else {
         result_p.innerHTML = result_p.innerHTML.slice(0,result_p.innerHTML.length - 1);
-    };
+    }
 });
