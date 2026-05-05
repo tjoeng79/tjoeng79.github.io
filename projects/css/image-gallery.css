@@ -21,10 +21,34 @@ header {
 
 .main-area {
   line-height: 0;
+  position: relative;
 }
 
 .main-area img {
   width: 100%;
+}
+
+.main-area button {
+  width: 20px;
+  font-size: 1rem;
+  opacity: .25;
+  cursor: pointer;
+}
+
+.main-area button:hover {
+  opacity: 1;
+}
+
+#prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 .thumb {
