@@ -56,8 +56,8 @@ function displayWeatherInfo(data) {
   weatherSymbol_p.classList.add('weather-symbol');
 
   weatherArea_div.appendChild(cityInfo_p);
-  weatherArea_div.appendChild(tempInfo_p);  
   weatherArea_div.appendChild(weatherSymbol_p);
+  weatherArea_div.appendChild(tempInfo_p);  
   weatherArea_div.appendChild(descInfo_p);
   weatherArea_div.appendChild(humidityInfo_p);
 }
