@@ -164,7 +164,9 @@
                 <label for="userMessage">Message</label>
                 <textarea class="form-control" rows="5" id="userMessage" placeholder="Input Message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -180,6 +182,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Data Submitted</h5>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for your inquiry.</p>
+            <p>We will contact and provide you with the information you seek.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
