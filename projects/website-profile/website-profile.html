@@ -3,71 +3,73 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Website Profile</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="website-profile.css">
   </head>
   <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">MyProfile</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div class="container">
+        <a class="navbar-brand">MyProfile</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- end of Navbar -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid" id="home">
-      <div class="container text-center">
-        <img src="img/landing-profile.webp" class="rounded-circle">
-        <h2>MyProfile</h2>
+    <section class="jumbotron" id="jumbotron">
+      <div class="container text-center pb-1">        
+        <img src="img/landing-profile.webp" class="img-thumbnail rounded-circle">
+        <h1 class="display-5">MyProfile</h1>
         <hr>
-        <h3>Engineer | Gamer | Collector</h3>
+        <p class="lead">Consultant | Developer | Editor</p>
       </div>
-    </div>
+    </section>
     <!-- end of Jumbotron -->
 
-    <section id="about">
-      <div class="container-fluid">
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
         <div class="row text-center">
-          <div class="col-sm-12">
+          <div class="col">
             <h2>About</h2>
             <hr>
           </div>
         </div>
-        <div class="row justify-content-center text-justify">
-          <div class="col-sm-5">
+        <div class="row justify-content-center fs-5">
+          <div class="col-lg-5">
             <p>A website profile is essentially a personal or professional website that communicates who you are, what you do, and why your work matters.</p>
             <p>It serves as a central hub for your portfolio, résumé, blog, or creative projects, allowing you to control your narrative and present your brand directly to visitors, clients, or employers.</p>
           </div>
-          <div class="col-sm-5">
+          <div class="col-lg-5">
             <p>About: Introduce yourself in the first person, highlighting your personality, expertise, and professional background. Include photos of yourself in action to make it relatable.</p>
             <p>Portfolio: Display your best work prominently on the homepage or in a dedicated portfolio section. Use high-quality images, videos, or interactive elements to engage visitors.</p>
             <p>Contact: Make it easy for visitors to reach you through a contact form, email, or social media links.</p>
@@ -76,95 +78,102 @@
         </div>
       </div>
     </section>
+    <!-- end of About -->
 
-    <section id="portfolio">
-      <div class="container-fluid">
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
         <div class="row text-center">
-          <div class="col-sm-12">
+          <div class="col">
             <h2>Portfolio</h2>
             <hr>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-sm-12">
-
-            <div class="card" style="width: 18rem;">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio1.png" class="card-img-top">                
                 <h5 class="card-title text-center">HTML</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio2.png" class="card-img-top">                
                 <h5 class="card-title text-center">CSS</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio3.png" class="card-img-top">                
                 <h5 class="card-title text-center">JavaScript</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio4.png" class="card-img-top">                
                 <h5 class="card-title text-center">Bootstrap</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio5.png" class="card-img-top">                
                 <h5 class="card-title text-center">React JS</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <div class="card-body">
                 <img src="img/portfolio6.png" class="card-img-top">                
                 <h5 class="card-title text-center">Node JS</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque.</p>
               </div>
             </div>            
-
           </div>
         </div>
       </div>
     </section>
+    <!-- end of Portfolio -->
 
-    <section id="contact">
-      <div class="container-fluid">
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
         <div class="row text-center">
-          <div class="col-sm-12">
+          <div class="col">
             <h2>Contact</h2>
             <hr>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-10">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-8">
             <form action="">
-              <div class="form-group">
-                <label for="userName">Name</label>
+              <div class="mb-3">
+                <label for="userName" class="form-label">Name</label>
                 <input type="text" class="form-control" id="userName" placeholder="Input Name">
               </div>
-              <div class="form-group">
-                <label for="userEmail">Email</label>
+              <div class="mb-3">
+                <label for="userEmail" class="form-label">Email</label>
                 <input type="email" class="form-control" id="userEmail" placeholder="Input Email">
               </div>
-              <div class="form-group">
-                <label for="userMessage">Message</label>
+              <div class="mb-3">
+                <label for="userMessage" class="form-label">Message</label>
                 <textarea class="form-control" rows="5" id="userMessage" placeholder="Input Message"></textarea>
               </div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Submit
               </button>
             </form>
@@ -172,46 +181,43 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-sm-12">
-            <p>Copyright 2026</p>            
-          </div>
-        </div>
+    <!-- end of Contact -->
+    
+    <!-- Footer -->
+    <footer class="bg-secondary text-white">
+      <div class="container p-2">
+        <p class="text-center"><i class="bi bi-c-circle"></i> Copyright 2026</p>            
       </div>
     </footer>
+    <!-- end of Footer -->
 
     <!-- Modal -->
     <div class="modal" id="exampleModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Data Submitted</h5>
+            <h5 class="modal-title"><i class="bi bi-info-circle text-success"></i> Data Submitted</h5>
           </div>
           <div class="modal-body">
             <p>Thank you for your inquiry.</p>
             <p>We will contact and provide you with the information you seek.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>    
+    <!-- end of Modal -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> -->
+
   </body>
 </html>
