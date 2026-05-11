@@ -36,6 +36,9 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -85,7 +88,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <h2>Portfolio</h2>
+            <h2><i class="bi bi-book-half"></i> Portfolio</h2>
             <hr>
           </div>
         </div>
@@ -149,6 +152,74 @@
     </section>
     <!-- end of Portfolio -->
 
+    <!-- Testimonial -->
+    <section class="testimonial" id="testimonial">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2><i class="bi bi-stars"></i> Testimonial</h2>
+            <p>What Our Clients Say</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="rating pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Excellent</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt dolorem dolores..</p>
+                <small>- User -</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="rating pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Very Good</h5>
+                <p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <small>- User -</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="rating pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="mb-1">Recommended</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum quos, accusamus expedita minus magni? Similique incidunt minima animi error!</p>
+                <small>- User -</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="rating pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="mb-1">Happy customer</h5>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis!.</p>
+                <small>- User -</small>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Testimonial -->
+
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container">
@@ -163,15 +234,24 @@
             <form action="">
               <div class="mb-3">
                 <label for="userName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="userName" placeholder="Input Name">
+                <input type="text" class="form-control" id="userName" placeholder="Input name">
               </div>
               <div class="mb-3">
                 <label for="userEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="userEmail" placeholder="Input Email">
+                <input type="email" class="form-control" id="userEmail" placeholder="Input email">
+              </div>
+              <div class="mb-3">
+                <label for="userInterest" class="form-label">Interest</label>
+                <select class="form-select" id="userInterest">
+                  <option value="0" selected>-- Choose a topic --</option>
+                  <option value="1">Desktop</option>
+                  <option value="2">Mobile</option>
+                  <option value="3">Web</option>
+                </select>
               </div>
               <div class="mb-3">
                 <label for="userMessage" class="form-label">Message</label>
-                <textarea class="form-control" rows="5" id="userMessage" placeholder="Input Message"></textarea>
+                <textarea class="form-control" rows="5" id="userMessage" placeholder="Input your message"></textarea>
               </div>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Submit

@@ -32,3 +32,11 @@ section {
   border: 4px solid hsla(60, 39%, 40%, 0.7);
   box-shadow: 4px 4px 2px rgba(70, 70, 70, .5);
 }
+
+.testimonial div.rating {
+  color: hsla(60, 64%, 55%, 0.8);
+}
+
+.contact {
+  background-color: hsla(0, 1%, 83%, 0.7);
+}
