@@ -105,3 +105,9 @@ main td a {
   font-style: italic;
   text-decoration: none;
 }
+
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+}
