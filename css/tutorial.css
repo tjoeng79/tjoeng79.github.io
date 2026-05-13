@@ -118,8 +118,8 @@ article p {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .container {
-    width: 50%;
+@media (min-width: 600px) {
+  article {
+    width: 400px;
   }
 }
